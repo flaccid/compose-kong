@@ -16,10 +16,8 @@ services:
       KONG_PG_HOST: db
       KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kong}
       KONG_PG_USER: ${KONG_PG_USER:-kong}
-      KONG_PORTAL: 'on'
       KONG_PROXY_ACCESS_LOG: /dev/stdout
       KONG_PROXY_ERROR_LOG: /dev/stderr
-      KONG_VITALS: 'on'
     links:
       - db:db
     ports:
